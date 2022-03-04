@@ -1,0 +1,114 @@
+
+:root {
+  --f-lg: 25px;
+  --f-md: 10.24px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--f-md);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    background: #F55A5A;
+    padding: .6rem
+}
+
+header img {
+    width: 25px;
+}
+
+.cardWrapper {
+    max-width: 550px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.card:last-child {
+    border-bottom: unset
+}
+
+.card > img {
+    width: 125px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 5px; 
+}
+
+.content {
+    margin: auto;
+    margin-left: 0;
+}
+
+.location {
+    display: flex;
+    gap: .5rem;
+}
+
+.location img {
+    width: 9px;
+    height: 11px;   
+}
+
+.location a {
+    color: #918E9B;
+}
+
+.content h2 {
+    font-size: var(--f-lg);
+    margin-top: .5rem;
+}
+
+.content b {
+    display: block;
+    margin-top: 1rem;
+}
+
+.content p {
+    margin-top: .5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #fdfbc0;
+}
+
+footer a {
+  color: #e70000;;
+}
+
+@media (max-width: 440px) {
+  .cardWrapper {
+    padding: 0 0.5rem
+  }  
+  
+  .card {
+      flex-direction: column;
+  }
+  
+  .card > img {
+      width: 100%;
+      object-position: bottom;
+  }
+}
